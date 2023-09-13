@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upper"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_weight="1"
+            android:text="Расписание поездов"
+
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upper"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_fragment_internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/material_dynamic_neutral70"
+            android:text="Поезда дальнего следования"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_fragment_international"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/material_dynamic_neutral40"
+            android:text="Пригородные электрички"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabbar"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/Date_textview"
+            android:textSize="12sp"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:layout_marginStart="16sp"
+            android:layout_marginVertical="16sp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/material_dynamic_neutral50"
+            android:id="@+id/buttonSave"
+            android:text="Сохранить Билет"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabbar"
+        android:layout_marginTop="100dp"
+        android:id="@+id/wikibutton"
+        android:backgroundTint="@color/material_dynamic_neutral50"
+        android:text="Справочная" />
+
+
+</RelativeLayout>
